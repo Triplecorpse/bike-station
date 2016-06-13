@@ -1,0 +1,22 @@
+{
+  "name": "bike-station",
+  "description": "Advanced bicycle mechanic",
+  "main": "index.js",
+  "authors": [
+    "Eldar Khaitov"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Triplecorpse/bike-station",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.1.0",
+    "jquery": "^3.0.0",
+    "bootstrap": "^3.3.6"
+  }
+}
