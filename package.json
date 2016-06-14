@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/Triplecorpse/bike-station#readme",
   "dependencies": {
+    "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-es2015": "^6.9.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-batch": "^1.0.5",
     "gulp-concat": "^2.6.0",
     "gulp-copy": "0.0.2",
     "gulp-sass": "^2.3.1",

@@ -6,18 +6,22 @@ var sass = require('gulp-sass');
 var runSequence = require('run-sequence');
 var watch = require('gulp-watch');
 var copy = require('gulp-copy');
+var react = require('gulp-react');
+var batch = require('gulp-batch');
 
 var paths = {
-    scripts: ['./bower_components/jquery/dist/jquery.min.js', './bower_components/react/react.min.js', './bower_components/bootstrap/dist/js/bootstrap.min.js', './src/**/*.js'],
+    scripts: ['./bower_components/jquery/dist/jquery.min.js', './bower_components/react/react.js', './bower_components/react/react-dom.js', './bower_components/bootstrap/dist/js/bootstrap.min.js', './src/**/*.js'],
     styles: ['./bower_components/bootstrap/dist/css/bootstrap.css', './src/**/*.scss'],
     fonts: ['./bower_components/bootstrap/dist/fonts/**/*.*'],
-    htmls: ['./src/index.html', './src/**/*.html']
+    htmls: ['./src/index.html', './src/**/*.html'],
+    jsxs: ['./src/**/*.jsx']
 };
 
 gulp.task('scripts:concat', () => {
     return gulp.src(paths.scripts)
         .pipe(sourcemaps.init())
         .pipe(babel({
+            plugins: ['transform-react-jsx'],
             presets: ['es2015']
         }))
         .pipe(concat('script.js'))
@@ -40,13 +44,11 @@ gulp.task('styles:compile', () => {
 });
 
 gulp.task('build', () => {
-    runSequence(['scripts:concat', 'styles:concat', 'styles:compile']);
+    runSequence(['scripts:concat', 'styles:concat', 'styles:compile', 'copy']);
 });
 
 gulp.task('watch', () => {
-    return gulp.src('./src/**/*.*')
-        .pipe(watch('./src/**/*.*'))
-        .pipe(gulp.dest('build'));
+    return gulp.watch('src/**', ['build']);
 });
 
 gulp.task('copy:fonts', () => {
