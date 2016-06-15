@@ -1,0 +1,43 @@
+{
+  "name": "categories",
+  "shown_name": "Категории",
+  "order": "1",
+  "list": [
+    {
+      "name": "auxiliaries",
+      "shown_name": "Дополнительные компоненты",
+      "order": "1",
+      "subcategoriesUrl": "#"
+    },
+    {
+      "name": "drivetrain",
+      "shown_name": "Ходовая",
+      "order": "2",
+      "subcategoriesUrl": "#"
+    },
+    {
+      "name": "frame",
+      "shown_name": "Рама",
+      "order": "3",
+      "subcategoriesUrl": "#"
+    },
+    {
+      "name": "rig",
+      "shown_name": "Навесное оборудование",
+      "order": "4",
+      "subcategoriesUrl": "#"
+    },
+    {
+      "name": "steering",
+      "shown_name": "Рулевое управление",
+      "order": "5",
+      "subcategoriesUrl": "#"
+    },
+    {
+      "name": "wheels",
+      "shown_name": "Колёса",
+      "order": "6",
+      "subcategoriesUrl": "#"
+    }
+  ]
+}

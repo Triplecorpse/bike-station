@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	width:678px;
+	margin:auto;
+	padding:0px;
+	border:0px none;
+	font-family: 'Droid Sans', sans-serif;
+	color:rgb(85,85,85);
+	text-align:justify;
+	font-size:12.8px;
+	text-indent:20px;
+	background-color:rgb(250,250,250);
+}
+
+h1 {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 400;
+	color: #90c140;
+	font-size: 22px;
+	line-height:1.15em;
+	margin-bottom: 12px;
+	text-align:center;
+	text-indent:0px;
+}
+
+h2 {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 400;
+	color: #000000;
+	font-size: 18px;
+	line-height:1.15em;
+	margin-bottom: 10px;	
+}
+
+h3 {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 400;
+	color: #888;
+	font-size: 18px;
+	line-height:1.15em;
+	margin-bottom: 6px;
+}
+
+h4 {
+	font-family: 'Droid Sans', sans-serif, Helvetica, Arial;
+	font-weight: 600;
+	color: #000000;
+	font-size: 14px;
+	margin-bottom: 6px;
+}
+
+h5 {
+	font-family: 'Droid Sans', sans-serif, Helvetica, Arial;
+	font-weight: 300;
+	color: #000000;
+	font-size: 14px;
+}
+
+h6 {
+	font-family: 'Droid Sans', sans-serif, Helvetica, Arial;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+p {
+	line-height:1.6em;
+	margin:8px 0;
+	font-family: 'Droid Sans', sans-serif;
+	color:rgb(85,85,85);
+	text-align:justify;
+	font-size:12.8px;
+}
+
+blockquote{
+	background-color:#fcc;
+	padding:1px 10px;
+}
+table{
+	border:1px solid black;
+	padding:2px;
+	border-collapse:collapse;
+}
+
+td{
+	border:1px solid black;
+	text-align:center;
+	padding:2px;
+}
+
+th{
+	text-align:center;
+	text-indent:0px;
+	font-weight:bolder;
+	border:1px solid black;
+	padding:2px;
+}
+
+.imgtable{				/*таблица с иллюстрацией по центру с описанием*/
+	margin: 10px auto;
+	text-align:center;
+	font-style:italic;
+	text-indent:0px;
+	border:none;
+	padding:0px;
+	border-collapse:collapse;
+}
+table.imgtable img {border:1px solid black;}
+table.imgtable td {border:none; padding:2px;}
+table.imgtable th {border:none;}
+
+
+.smlltr{					/*описание пунктов иллюстрации в таблице с иллюстрацией*/
+	font-size:70%;
+}
+
+.copyright{
+	display:block;
+	width:75%;
+	margin:0px 0px auto auto;
+	text-align:left;
+	font-size:smaller;
+	font-style:italic;
+}
+
+.listtable{				/*таблица, как иллюстрированный пункт*/
+	margin: 10px auto;
+	border:none;
+	padding:0px;
+	width:100%;
+	border-collapse:collapse;
+}
+table.listtable img {border:1px solid black;}
+table.listtable td {border:none; border-bottom:1px solid gray; border-top:1px solid gray; vertical-align:center; padding:5px}
+table.listtable th {border:none; border-bottom:1px solid black; border-top:1px solid black;}

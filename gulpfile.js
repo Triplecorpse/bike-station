@@ -10,7 +10,7 @@ var react = require('gulp-react');
 var batch = require('gulp-batch');
 
 var paths = {
-    scripts: ['./bower_components/jquery/dist/jquery.min.js', './bower_components/react/react.js', './bower_components/react/react-dom.js', './bower_components/bootstrap/dist/js/bootstrap.min.js', './src/**/*.js'],
+    scripts: ['./bower_components/jquery/dist/jquery.min.js', './bower_components/react/react.js', './bower_components/react/react-dom.js', './bower_components/bootstrap/dist/js/bootstrap.min.js', './src/blocks/**/*.js', './src/main.js'],
     styles: ['./bower_components/bootstrap/dist/css/bootstrap.css', './src/**/*.scss'],
     fonts: ['./bower_components/bootstrap/dist/fonts/**/*.*'],
     htmls: ['./src/index.html', './src/**/*.html'],
